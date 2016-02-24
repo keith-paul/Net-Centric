@@ -1,0 +1,47 @@
+.wordStyle{
+    border-style: hidden;
+    background-color: #fedf25;
+    font-family: Corbel;
+    display: block;
+    height:600px;
+    width:600px;
+    min-width: 600px;
+    min-height: 600px;
+}
+
+.standardWordStyle{
+    color:#e80010;
+    margin-left: 100px;
+}
+
+#firstWordSet{
+    font-size: 85px;
+}
+
+#secondWordSet{
+    font-size: 59px;
+
+}
+
+#thirdWordSet{
+    font-size: 68px;
+}
+
+#fourthWordSet{
+    font-size: 105px;
+    font-weight: bold;
+}
+
+
+#fifthWordSet{
+    font-size: 45px;
+}
+
+#sixthWordSet{
+    font-size: 55px;
+}
+
+img{
+    display: inline-block;
+    width: 600px;
+}

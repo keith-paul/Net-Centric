@@ -1,0 +1,39 @@
+.pageAssignments{
+    background-color: #f1f0ee;
+    background-image: url("../IMAGES/pencilpaper.jpg"); /* not my image, found at https://legacy.wlu.ca/page.php?grp_id=306&p=25040&e_id=343 */
+    height: 1000px;
+    background-size: 2000px 1000px;
+    background-position: center;
+    border-radius: 15px;
+}
+h1{
+    color: crimson;
+    margin-top: 0px;
+}
+#item1{
+    background-color: cornsilk;
+    border-style: solid;
+    border-color: #e80010;
+    border-width: medium;
+    width: 10%;
+    list-style-type: none;
+    border-radius: 7px;
+    font-size: large;
+}
+#item2{
+    background-color: cornsilk;
+    border-style: solid;
+    border-color: #e80010;
+    border-width: medium;
+    width: 10%;
+    list-style-type: none;
+    border-radius: 7px;
+    font-size: large;
+
+}
+
+#directions{
+    color: #dedbde;
+    margin-left: 20px;
+    font-size: x-large;
+}
