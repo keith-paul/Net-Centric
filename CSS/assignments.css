@@ -10,7 +10,7 @@ h1{
     color: crimson;
     margin-top: 0px;
 }
-#item1{
+#item1,#item2,#item3{
     background-color: cornsilk;
     border-style: solid;
     border-color: #e80010;
@@ -19,17 +19,6 @@ h1{
     list-style-type: none;
     border-radius: 7px;
     font-size: large;
-}
-#item2{
-    background-color: cornsilk;
-    border-style: solid;
-    border-color: #e80010;
-    border-width: medium;
-    width: 10%;
-    list-style-type: none;
-    border-radius: 7px;
-    font-size: large;
-
 }
 
 #directions{
