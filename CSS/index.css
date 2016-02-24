@@ -1,0 +1,14 @@
+#gitHubLoc{
+    font-size: x-large;
+    color: white;
+    background-color: cornflowerblue;
+    height: 800px;
+    border-radius: 15px;
+    border-style: groove;
+    background-image: url("../IMAGES/octocat_darkwood.jpg"); /* not my image, found at http://www.linickx.com/github-darkwood-wallpaper */
+    background-size: 2000px 1000px;
+    background-position: center;
+}
+h1{
+    color: white;
+}
