@@ -26,7 +26,11 @@ function init() {
 
 function showTab() {
     var selectedId = location.href.split("/").slice(-1);
-
+    //added because the selctedId would only be index.html, but it needs to be ../index.html to work properly
+    //../index.html is what is stored in contentDivs
+    if(selectedId == "index.html" ){
+        selectedId = "../index.html";
+    }
     // Highlight the selected tab, and dim all others.
     // Also show the selected content div, and hide all others.
     for ( var id in contentDivs ) {
