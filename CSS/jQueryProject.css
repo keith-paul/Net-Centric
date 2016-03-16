@@ -1,8 +1,11 @@
+body {
+    display: none;
+}
 #tictactoeboard{
     background-repeat: no-repeat;
 }
 
-#winO,#winX{
+#winO,#winX,#tie{
     color:Red;
     font-family: Nyala;
     font-size: 900%;

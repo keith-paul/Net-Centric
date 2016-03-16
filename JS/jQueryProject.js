@@ -25,6 +25,7 @@ var JQueryProject = function() {
                     $('#tictacboard').hide();
                     $('#winO').fadeIn();
                 }
+                tieCheck();
             }
             else if (num == 1) {
                 $(idClicked).fadeOut();
@@ -35,6 +36,7 @@ var JQueryProject = function() {
                     $('#tictacboard').hide();
                     $('#winX').fadeIn();
                 }
+                tieCheck();
             }
             $(idClicked).fadeIn();
 
@@ -100,6 +102,19 @@ var JQueryProject = function() {
             }
             else
                 return false;
+    }
+
+    function tieCheck(){
+        var count = 0;
+        for(var i = 1; i <= 9;i++){
+            if(boardArray[i] != null){
+                count ++;
+            }
+        }
+        if(count == 9){
+            $('#tictacboard').hide();
+            $('#tie').fadeIn();
+        }
     }
 
 

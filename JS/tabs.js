@@ -23,6 +23,8 @@ function init() {
     showTab();
     $("#winO").hide();
     $("#winX").hide();
+    $("#tie").hide();
+    $("#ticTac").show();
 }
 
 function showTab() {
