@@ -21,7 +21,8 @@ function init() {
     }
 
     showTab();
-
+    $("#winO").hide();
+    $("#winX").hide();
 }
 
 function showTab() {

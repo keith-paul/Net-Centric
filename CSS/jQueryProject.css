@@ -1,0 +1,199 @@
+#tictactoeboard{
+    background-repeat: no-repeat;
+}
+
+#winO,#winX{
+    color:Red;
+    font-family: Nyala;
+    font-size: 900%;
+}
+
+h1{
+    align-content: center;
+}
+#directions{
+    font-family: "Franklin Gothic Heavy";
+    color: red;
+    font-size: large;
+}
+
+#o1{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    display: none;
+}
+
+#x1{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    display: none;
+}
+
+#b1{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+#o2{
+    position: absolute;
+    top: 250px;
+    left: 375px;
+    display: none;
+}
+
+#x2{
+    position: absolute;
+    top: 250px;
+    left: 375px;
+    display: none;
+}
+
+#b2{
+    position: absolute;
+    top: 250px;
+    left: 375px;
+}
+
+#o3{
+    position: absolute;
+    top: 250px;
+    left: 650px;
+    display: none;
+}
+
+#x3{
+    position: absolute;
+    top: 250px;
+    left: 650px;
+    display: none;
+}
+
+#b3{
+    position: absolute;
+    top: 250px;
+    left: 650px;
+}
+
+#o4{
+    position: absolute;
+    top: 525px;
+    left: 100px;
+    display: none;
+}
+
+#x4{
+    position: absolute;
+    top: 525px;
+    left: 100px;
+    display: none;
+}
+
+#b4{
+    position: absolute;
+    top: 525px;
+    left: 100px;
+}
+
+#o5{
+    position: absolute;
+    top: 525px;
+    left: 375px;
+    display: none;
+}
+
+#x5{
+    position: absolute;
+    top: 525px;
+    left: 375px;
+    display: none;
+}
+
+#b5{
+    position: absolute;
+    top: 525px;
+    left: 375px;
+}
+
+#o6{
+    position: absolute;
+    top: 525px;
+    left: 650px;
+    display: none;
+}
+
+#x6{
+    position: absolute;
+    top: 525px;
+    left: 650px;
+    display: none;
+}
+
+#b6{
+    position: absolute;
+    top: 525px;
+    left: 650px;
+}
+
+#o7{
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    display: none;
+}
+
+#x7{
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    display: none;
+}
+
+#b7{
+    position: absolute;
+    top: 800px;
+    left: 100px;
+}
+
+#o8{
+    position: absolute;
+    top: 800px;
+    left: 375px;
+    display: none;
+}
+
+#x8{
+    position: absolute;
+    top: 800px;
+    left: 375px;
+    display: none;
+}
+
+#b8{
+    position: absolute;
+    top: 800px;
+    left: 375px;
+}
+
+#o9{
+    position: absolute;
+    top: 800px;
+    left: 650px;
+    display: none;
+}
+
+#x9{
+    position: absolute;
+    top: 800px;
+    left: 650px;
+    display: none;
+}
+
+#b9{
+    position: absolute;
+    top: 800px;
+    left: 650px;
+}
+
