@@ -1,0 +1,54 @@
+.inserTitle{
+    font-size: 300%;
+    color: cadetblue;
+}
+
+body{
+    background-color: beige;
+}
+
+input,select{
+    color: black;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#BattleName{
+
+}
+
+#inputBoxes{
+    
+}
+
+#newSite{
+    float:left;
+    width: 775px;
+    border: Solid;
+    border-color: black;
+    margin-bottom: 50px;
+}
+
+#newBattle{
+    float:right;
+    width: 775px;
+    border: Solid;
+    border-color: black;
+    margin-bottom: 50px;
+}
+
+#tableOfSitesAndBattles{
+    border: solid;
+    border-color: black;
+}
+table, th, td,tbody {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#sitesAndBattles{
+    border-color: black;
+    border: Solid;
+    border-color: black;
+
+}
