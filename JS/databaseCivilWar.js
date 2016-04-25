@@ -28,8 +28,9 @@ function insertNewSite()
     ajax.fail(function () {
         alert("Failure");
     });
-    getSites();
+    getBattles();
     getBattlesAndSites();
+    getSites();
 }
 
 function insertNewSiteCallback(response_in)
@@ -74,6 +75,7 @@ function insertNewBattle()
     });
     getBattles();
     getBattlesAndSites();
+    getSites();
 }
 
 function insertNewBattleCallback(response_in)
@@ -230,46 +232,3 @@ function showTable(queryResult, newID, parentTable,columns){
     }
 }
 
-
-
-
-function updateBattles()
-{
-    var relatedBattle, Name, Width, Length, XPos, YPos,
-        newRelatedBattle, newName, newWidth, newLength, newXPos, newYPos;
-    relatedBattle = JSON.stringify($('#relatedBattle option:selected').val());
-    newRelatedBattle = JSON.stringify($('#newRelatedBattle option:selected').val());
-
-    ajax = ajaxupdateBattles("updateBattles", newRelatedBattle, newName, newWidth,
-        newLength, newXPos, newYPos);
-    ajax.done(updateBattlesCallback);
-    ajax.fail(function () {
-        alert("Failure");
-    });
-}
-
-function ajaxupdateBattles(method)
-{
-
-    return $.ajax({
-        url: '../PHP/databaseAPI.php',
-        type: 'POST',
-        data: {method: method
-        }
-    });
-}
-
-function updateBattlesCallback(response_in)
-{
-    response = JSON.parse(response_in);
-    $battles = response["battles"];
-    if (!response['success'])
-    {
-        $("#results").html("updateBattles failed");
-    } else
-    {
-        $("#results").html(response['querystring']);
-        $battles = getBattles();
-        showBattles($battles);
-    }
-}

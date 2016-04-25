@@ -111,58 +111,6 @@ function insertNewBattle() {
     return json_encode($return);
 }
 
-function updateGarden() {
-    // retrieve and sanitize posted values.
-
-    if (isset($_POST['ID'])) {
-        $ID = json_decode(sanitize($_POST['ID']));
-    }
-    if (isset($_POST['newParentID'])) {
-        $newParentID = json_decode(sanitize($_POST['newParentID']));
-    }
-
-    if (isset($_POST['newName'])) {
-        $newName = json_decode(sanitize($_POST['newName']));
-    }
-
-    if (isset($_POST['newWidth'])) {
-        $newWidth = json_decode(sanitize($_POST['newWidth']));
-    }
-
-    if (isset($_POST['newLength'])) {
-        $newLength = json_decode(sanitize($_POST['newLength']));
-    }
-
-    if (isset($_POST['newXPos'])) {
-        $newXPos = json_decode(sanitize($_POST['newXPos']));
-    }
-
-    if (isset($_POST['newYPos'])) {
-        $newYPos = json_decode(sanitize($_POST['newYPos']));
-    }
-
-    $dbConn = mysqli_connect(demoServer(), demoUsername(), demoPassword(), demoDB());
-    if ($dbConn->connect_error) {
-        die("Connection failed: " . $dbConn->connect_error);
-    }
-    $query = "UPDATE RectGarden " +
-        "SET ParentID='" + $newParentID + "'" +
-        "SET Name='" + $newName + "'" +
-        "SET Width='" + $newWidth + "'" +
-        "SET Length='" + $newLength + "'" +
-        "SET XPos='" + $newXPos + "'" +
-        "SET YPos='" + $newYPos + "'" +
-        "WHERE ID=" + $ID;
-    $result = $dbConn->query($query);
-    $return = new stdClass();
-    $return->querystring = $query;
-    if ($result) {
-        $return->success = true;
-    } else {
-        $return->success = false;
-    }
-    return json_encode($return);
-}
 
 /**
  * function getGardens()
