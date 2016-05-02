@@ -153,7 +153,6 @@ function getBattlesCallback(responseIn)
 
 function getBattlesAndSites()
 {
-    //alert ("in getBattlesAndSites()");
     ajax = ajaxgetBattlesAndSites("getBattlesAndSites");
     ajax.done(getBattlesAndSitesCallback);
     ajax.fail(function () {
@@ -216,13 +215,13 @@ function getSitesCallback(responseIn) {
 
 function showTable(queryResult, newID, parentTable,columns){
     $('#' + parentTable ).empty();
-    var battleLength = queryResult.length;
-    for (i = 0; i < battleLength; i++) {
+    var newLength = queryResult.length;
+    for (i = 0; i < newLength; i++) {
         $("#" + parentTable).append($('<tr>', {
             id: (newID + i).toString()
         }));
     }
-    for (i = 0; i < battleLength; i++) {
+    for (i = 0; i < newLength; i++) {
         for (j = 0; j < columns; j++) {
             $("#"+newID + i).append($('<td>', {
                 value: queryResult[i][j],
